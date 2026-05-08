@@ -426,6 +426,25 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
+function openVideoLightbox() {
+  const lightbox = document.getElementById('videoLightbox');
+  const video = document.getElementById('lightboxVideo');
+
+  lightbox.classList.add('show');
+
+  video.currentTime = 0;
+  video.play();
+}
+
+function closeVideoLightbox() {
+  const lightbox = document.getElementById('videoLightbox');
+  const video = document.getElementById('lightboxVideo');
+
+  lightbox.classList.remove('show');
+
+  video.pause();
+}
+
 if (lightbox) {
   lightbox.addEventListener('click', e => {
     if (e.target === lightbox) closeLightbox();

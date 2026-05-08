@@ -110,11 +110,16 @@
             <span class="slot-caption" data-i18n-key="slotCaption1">Her Smile</span>
           </div>
 
-          <div class="photo-slot" onclick="triggerUpload(this)">
-            <img data-initial-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Memory 2" />
-            <span class="slot-icon">💙</span>
-            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
-            <span class="slot-caption" data-i18n-key="slotCaption2">Our Moments</span>
+          <div class="video-slot">
+            <video class="memory-video" autoplay muted loop playsinline controls poster="./assets/video-thumbnail.jpg">
+              <source src="./assets/ourMoments.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">
+              <span class="slot-icon">💛</span>
+              <span class="slot-caption" data-i18n-key="slotCaption4">
+                Our Moments
+              </span>
+            </div>
           </div>
 
           <div class="photo-slot" onclick="triggerUpload(this)">
