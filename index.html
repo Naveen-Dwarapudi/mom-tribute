@@ -47,6 +47,10 @@
        PAGE
        ════════════════════════════════════════ -->
   <div class="page">
+    <div class="lang-switch" aria-label="Language switch">
+      <button type="button" class="lang-option" data-lang="en">English</button>
+      <button type="button" class="lang-option active" data-lang="te">తెలుగు</button>
+    </div>
 
     <!-- ══ HERO ══ -->
     <section class="hero" id="hero">
@@ -59,83 +63,83 @@
         <div class="photo-ring">
           <div class="photo-placeholder" id="heroPlaceholder" onclick="triggerHeroUpload()">
             <span class="pp-icon">🌸</span>
-            <span class="pp-lbl">Add her photo</span>
+            <span class="pp-lbl" data-i18n-key="heroPlaceholderLabel">Add her photo</span>
           </div>
-          <img id="heroImg" src="" alt="Annapurna Dwarapudi" style="display:none;" />
+          <img id="heroImg" data-initial-src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Annapurna Dwarapudi" />
         </div>
 
         <div class="photo-glow"></div>
-        <p class="queen-label">My Queen &middot; My Everything</p>
+        <p class="queen-label" data-i18n-key="heroQueenLabel">My Queen &middot; My Everything</p>
       </div>
 
-      <p class="subtitle-top">A Son's Greatest Gift</p>
+      <p class="subtitle-top" data-i18n-key="heroSubtitle">A Son's Greatest Gift</p>
 
-      <h1>
+      <h1 data-i18n-key="heroHeading">
         For <span>Annapurna</span><br />
         My Whole World
       </h1>
 
       <div class="hero-divider"></div>
 
-      <p class="hero-tagline">
+      <p class="hero-tagline" data-i18n-key="heroTagline">
         To the most beautiful soul I know — every single line of this page
         was written with love, just for you, Amma.
       </p>
 
-      <div class="hero-name-tag">Annapurna Dwarapudi</div>
+      <div class="hero-name-tag" data-i18n-key="heroNameTag">Annapurna Dwarapudi</div>
 
       <div class="scroll-hint">
-        <span>Scroll</span>
+        <span data-i18n-key="scrollHint">Scroll</span>
         <div class="scroll-arrow"></div>
       </div>
     </section>
 
     <!-- ══ PHOTO MEMORIES ══ -->
     <section class="section reveal" id="memories">
-      <p class="section-label">Her Beautiful Journey</p>
-      <h2 class="section-title">Moments That Made <em>Us</em></h2>
+      <p class="section-label" data-i18n-key="sectionLabelMemories">Her Beautiful Journey</p>
+      <h2 class="section-title" data-i18n-key="sectionTitleMemories">Moments That Made <em>Us</em></h2>
       <div class="sep"></div>
 
       <div class="glass-card">
         <div class="photos-grid">
 
           <div class="photo-slot featured" onclick="triggerUpload(this)">
-            <img src="" alt="Memory 1" />
+            <img data-initial-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80" alt="Memory 1" />
             <span class="slot-icon">🌸</span>
-            <span class="slot-lbl">Add Photo</span>
-            <span class="slot-caption">Her Smile</span>
+            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
+            <span class="slot-caption" data-i18n-key="slotCaption1">Her Smile</span>
           </div>
 
           <div class="photo-slot" onclick="triggerUpload(this)">
-            <img src="" alt="Memory 2" />
+            <img data-initial-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Memory 2" />
             <span class="slot-icon">💙</span>
-            <span class="slot-lbl">Add Photo</span>
-            <span class="slot-caption">Our Moments</span>
+            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
+            <span class="slot-caption" data-i18n-key="slotCaption2">Our Moments</span>
           </div>
 
           <div class="photo-slot" onclick="triggerUpload(this)">
-            <img src="" alt="Memory 3" />
+            <img data-initial-src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Memory 3" />
             <span class="slot-icon">✨</span>
-            <span class="slot-lbl">Add Photo</span>
-            <span class="slot-caption">Her Joy</span>
+            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
+            <span class="slot-caption" data-i18n-key="slotCaption3">Her Joy</span>
           </div>
 
           <div class="photo-slot" onclick="triggerUpload(this)">
-            <img src="" alt="Memory 4" />
+            <img data-initial-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Memory 4" />
             <span class="slot-icon">💛</span>
-            <span class="slot-lbl">Add Photo</span>
-            <span class="slot-caption">Our Family</span>
+            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
+            <span class="slot-caption" data-i18n-key="slotCaption4">Our Family</span>
           </div>
 
           <div class="photo-slot" onclick="triggerUpload(this)">
-            <img src="" alt="Memory 5" />
+            <img data-initial-src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=900&q=80" alt="Memory 5" />
             <span class="slot-icon">🌺</span>
-            <span class="slot-lbl">Add Photo</span>
-            <span class="slot-caption">Her Strength</span>
+            <span class="slot-lbl" data-i18n-key="slotLbl">Add Photo</span>
+            <span class="slot-caption" data-i18n-key="slotCaption5">Her Strength</span>
           </div>
 
         </div>
-        <p class="gallery-note">&#x1F4F7; Click any frame to add a photo &mdash; they stay just for this session</p>
+        <p class="gallery-note" data-i18n-key="galleryNote">📷 Click any frame to add a photo &mdash; they stay just for this session</p>
       </div>
     </section>
 
@@ -145,7 +149,7 @@
       <span class="quote-mark">&ldquo;</span>
 
       <div class="glass-card">
-        <p class="message-text">
+        <p class="message-text" data-i18n-key="messageText">
           You raised <strong>two sons</strong> on your own, and never once let us
           feel the weight you carried. Every meal you cooked, every sacrifice
           you made, every sleepless night you spent — you gave it all
@@ -170,46 +174,46 @@
 
     <!-- ══ SUPERPOWERS ══ -->
     <section class="section reveal" id="qualities">
-      <p class="section-label">What She Means To Us</p>
-      <h2 class="section-title">Her <em>Superpowers</em></h2>
+      <p class="section-label" data-i18n-key="sectionLabelQualities">What She Means To Us</p>
+      <h2 class="section-title" data-i18n-key="sectionTitleQualities">Her <em>Superpowers</em></h2>
       <div class="sep"></div>
 
       <div class="qualities-grid">
 
         <div class="quality-card reveal">
           <span class="quality-icon">💪</span>
-          <p class="quality-title">Unbreakable Strength</p>
-          <p class="quality-desc">She faced every storm alone and never once let it break her smile. Her resilience is our foundation.</p>
+          <p class="quality-title" data-i18n-key="quality1Title">Unbreakable Strength</p>
+          <p class="quality-desc" data-i18n-key="quality1Desc">She faced every storm alone and never once let it break her smile. Her resilience is our foundation.</p>
         </div>
 
         <div class="quality-card reveal">
           <span class="quality-icon">❤️</span>
-          <p class="quality-title">Endless Love</p>
-          <p class="quality-desc">Her heart has no limits — she gave us everything she had and more, every single day without fail.</p>
+          <p class="quality-title" data-i18n-key="quality2Title">Endless Love</p>
+          <p class="quality-desc" data-i18n-key="quality2Desc">Her heart has no limits — she gave us everything she had and more, every single day without fail.</p>
         </div>
 
         <div class="quality-card reveal">
           <span class="quality-icon">🌟</span>
-          <p class="quality-title">Our North Star</p>
-          <p class="quality-desc">In every confusing moment, in every dark road, she was always the light that showed us the way forward.</p>
+          <p class="quality-title" data-i18n-key="quality3Title">Our North Star</p>
+          <p class="quality-desc" data-i18n-key="quality3Desc">In every confusing moment, in every dark road, she was always the light that showed us the way forward.</p>
         </div>
 
         <div class="quality-card reveal">
           <span class="quality-icon">🛡️</span>
-          <p class="quality-title">Our Protector</p>
-          <p class="quality-desc">She shielded us from pain we never even knew existed, carrying our burdens so we could carry our dreams.</p>
+          <p class="quality-title" data-i18n-key="quality4Title">Our Protector</p>
+          <p class="quality-desc" data-i18n-key="quality4Desc">She shielded us from pain we never even knew existed, carrying our burdens so we could carry our dreams.</p>
         </div>
 
         <div class="quality-card reveal">
           <span class="quality-icon">🌺</span>
-          <p class="quality-title">Graceful &amp; Kind</p>
-          <p class="quality-desc">Even under immense pressure, her grace never wavered. Her kindness toward others is truly rare beauty.</p>
+          <p class="quality-title" data-i18n-key="quality5Title">Graceful &amp; Kind</p>
+          <p class="quality-desc" data-i18n-key="quality5Desc">Even under immense pressure, her grace never wavered. Her kindness toward others is truly rare beauty.</p>
         </div>
 
         <div class="quality-card reveal">
           <span class="quality-icon">🏆</span>
-          <p class="quality-title">Our Greatest Teacher</p>
-          <p class="quality-desc">Everything good in us — every value, every virtue — she planted it with patience, love, and quiet wisdom.</p>
+          <p class="quality-title" data-i18n-key="quality6Title">Our Greatest Teacher</p>
+          <p class="quality-desc" data-i18n-key="quality6Desc">Everything good in us — every value, every virtue — she planted it with patience, love, and quiet wisdom.</p>
         </div>
 
       </div>
@@ -217,8 +221,8 @@
 
     <!-- ══ JOURNEY TIMELINE ══ -->
     <section class="section reveal" id="journey">
-      <p class="section-label">The Story of a Queen</p>
-      <h2 class="section-title">Her <em>Journey</em></h2>
+      <p class="section-label" data-i18n-key="sectionLabelJourney">The Story of a Queen</p>
+      <h2 class="section-title" data-i18n-key="sectionTitleJourney">Her <em>Journey</em></h2>
       <div class="sep"></div>
 
       <div class="timeline">
@@ -226,36 +230,36 @@
         <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-year">The Beginning</p>
-            <p class="timeline-title">A Woman of Courage</p>
-            <p class="timeline-desc">She chose to face the world on her own terms — with dignity, with grace, and with an unwavering spirit that inspired everyone around her.</p>
+            <p class="timeline-year" data-i18n-key="timelineYear1">The Beginning</p>
+            <p class="timeline-title" data-i18n-key="timelineTitle1">A Woman of Courage</p>
+            <p class="timeline-desc" data-i18n-key="timelineDesc1">She chose to face the world on her own terms — with dignity, with grace, and with an unwavering spirit that inspired everyone around her.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-right">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-year">The Journey</p>
-            <p class="timeline-title">Raising Two Sons Alone</p>
-            <p class="timeline-desc">As a single mother she carried the world on her shoulders — working tirelessly, sacrificing endlessly, yet always showing up with a warm smile and open arms.</p>
+            <p class="timeline-year" data-i18n-key="timelineYear2">The Journey</p>
+            <p class="timeline-title" data-i18n-key="timelineTitle2">Raising Two Sons Alone</p>
+            <p class="timeline-desc" data-i18n-key="timelineDesc2">As a single mother she carried the world on her shoulders — working tirelessly, sacrificing endlessly, yet always showing up with a warm smile and open arms.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-year">Every Day</p>
-            <p class="timeline-title">Sacrifice Without Complaint</p>
-            <p class="timeline-desc">She never once asked for credit. Every sacrifice was silent, every struggle was hidden — her only wish was to see her sons happy and whole.</p>
+            <p class="timeline-year" data-i18n-key="timelineYear3">Every Day</p>
+            <p class="timeline-title" data-i18n-key="timelineTitle3">Sacrifice Without Complaint</p>
+            <p class="timeline-desc" data-i18n-key="timelineDesc3">She never once asked for credit. Every sacrifice was silent, every struggle was hidden — her only wish was to see her sons happy and whole.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-right">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-year">Today &amp; Always</p>
-            <p class="timeline-title">Our Forever Hero</p>
-            <p class="timeline-desc">Today her sons stand proud because of her. Everything we are, everything we will become — it all began with Annapurna Dwarapudi.</p>
+            <p class="timeline-year" data-i18n-key="timelineYear4">Today &amp; Always</p>
+            <p class="timeline-title" data-i18n-key="timelineTitle4">Our Forever Hero</p>
+            <p class="timeline-desc" data-i18n-key="timelineDesc4">Today her sons stand proud because of her. Everything we are, everything we will become — it all began with Annapurna Dwarapudi.</p>
           </div>
         </div>
 
@@ -265,11 +269,11 @@
     <!-- ══ DEDICATION ══ -->
     <section class="dedication reveal" id="dedication">
       <span class="dedication-icon">💙</span>
-      <h2>I Love You, Amma</h2>
-      <p class="dedication-sub">Forever &amp; always &mdash; your proud son, Naveen</p>
+      <h2 data-i18n-key="dedicationHeading">I Love You, Amma</h2>
+      <p class="dedication-sub" data-i18n-key="dedicationSub">Forever &amp; always &mdash; your proud son, Naveen</p>
       <div class="sep"></div>
       <div class="glass-card" style="max-width:520px;margin:0 auto 2rem;">
-        <p class="message-text" style="font-size:1.1rem;line-height:1.9;">
+        <p class="dedication-text" data-i18n-key="dedicationMessage" style="font-size:1.1rem;line-height:1.9;">
           You didn't just raise us, Amma —
           <strong>you built us.</strong> Every version of us that is good,
           that is kind, that is strong — it came from you.
@@ -277,13 +281,13 @@
           and our greatest blessing. 🌸
         </p>
       </div>
-      <span class="signature">— Made with all my love, Naveen Dwarapudi 💛</span>
+      <span class="signature" data-i18n-key="signature">— Made with all my love, Naveen Dwarapudi 💛</span>
     </section>
 
     <!-- ══ FOOTER ══ -->
     <footer class="footer">
-      <p class="footer-name">For Annapurna Dwarapudi &mdash; Our Queen</p>
-      <p class="footer-copy">
+      <p class="footer-name" data-i18n-key="footerName">For Annapurna Dwarapudi &mdash; Our Queen</p>
+      <p class="footer-copy" data-i18n-key="footerCopy">
         &copy; <span id="year"></span> Naveen Dwarapudi. Made with
         &hearts; for the woman who gave us everything.
         All rights reserved.

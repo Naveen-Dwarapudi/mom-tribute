@@ -38,6 +38,54 @@ body {
   cursor: none;
 }
 
+.lang-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(58,155,213,0.2);
+  border-radius: 999px;
+  padding: 0.35rem;
+  box-shadow: 0 14px 36px rgba(18,58,96,0.12);
+  backdrop-filter: blur(12px);
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  color: var(--navy-dark);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lang-option:hover {
+  background: rgba(58,155,213,0.12);
+}
+
+.lang-option.active {
+  background: rgba(58,155,213,0.18);
+  color: var(--sky-deep);
+}
+
+@media (max-width: 720px) {
+  .lang-switch {
+    position: static;
+    margin: 0 auto 1.75rem;
+  }
+
+  .lang-option {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
 /* ── CUSTOM CURSOR ── */
 .cursor {
   width: 12px; height: 12px;
