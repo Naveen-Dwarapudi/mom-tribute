@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A heartfelt tribute to Annapurna Dwarapudi — a mother, a hero, a queen. Made with love by Naveen Dwarapudi." />
+  <meta name="author" content="Naveen Dwarapudi" />
+  <title>For Annapurna Dwarapudi💙 — My Queen, My Everything</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- ════════════════════════════════════════
+       LOADING SCREEN
+       ════════════════════════════════════════ -->
+  <div id="loader">
+    <span class="loader-crown">👑</span>
+    <p class="loader-text">Preparing something special…</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       LIGHTBOX
+       ════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImg" src="" alt="Memory" />
+  </div>
+
+  <!-- ════════════════════════════════════════
+       PAGE
+       ════════════════════════════════════════ -->
+  <div class="page">
+
+    <!-- ══ HERO ══ -->
+    <section class="hero" id="hero">
+      <div class="hero-glow"></div>
+
+      <!-- Queen Portrait -->
+      <div class="portrait-wrap">
+        <span class="crown-above">👑</span>
+
+        <div class="photo-ring">
+          <div class="photo-placeholder" id="heroPlaceholder" onclick="triggerHeroUpload()">
+            <span class="pp-icon">🌸</span>
+            <span class="pp-lbl">Add her photo</span>
+          </div>
+          <img id="heroImg" src="" alt="Annapurna Dwarapudi" style="display:none;" />
+        </div>
+
+        <div class="photo-glow"></div>
+        <p class="queen-label">My Queen &middot; My Everything</p>
+      </div>
+
+      <p class="subtitle-top">A Son's Greatest Gift</p>
+
+      <h1>
+        For <span>Annapurna</span><br />
+        My Whole World
+      </h1>
+
+      <div class="hero-divider"></div>
+
+      <p class="hero-tagline">
+        To the most beautiful soul I know — every single line of this page
+        was written with love, just for you, Amma.
+      </p>
+
+      <div class="hero-name-tag">Annapurna Dwarapudi</div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ══ PHOTO MEMORIES ══ -->
+    <section class="section reveal" id="memories">
+      <p class="section-label">Her Beautiful Journey</p>
+      <h2 class="section-title">Moments That Made <em>Us</em></h2>
+      <div class="sep"></div>
+
+      <div class="glass-card">
+        <div class="photos-grid">
+
+          <div class="photo-slot featured" onclick="triggerUpload(this)">
+            <img src="" alt="Memory 1" />
+            <span class="slot-icon">🌸</span>
+            <span class="slot-lbl">Add Photo</span>
+            <span class="slot-caption">Her Smile</span>
+          </div>
+
+          <div class="photo-slot" onclick="triggerUpload(this)">
+            <img src="" alt="Memory 2" />
+            <span class="slot-icon">💙</span>
+            <span class="slot-lbl">Add Photo</span>
+            <span class="slot-caption">Our Moments</span>
+          </div>
+
+          <div class="photo-slot" onclick="triggerUpload(this)">
+            <img src="" alt="Memory 3" />
+            <span class="slot-icon">✨</span>
+            <span class="slot-lbl">Add Photo</span>
+            <span class="slot-caption">Her Joy</span>
+          </div>
+
+          <div class="photo-slot" onclick="triggerUpload(this)">
+            <img src="" alt="Memory 4" />
+            <span class="slot-icon">💛</span>
+            <span class="slot-lbl">Add Photo</span>
+            <span class="slot-caption">Our Family</span>
+          </div>
+
+          <div class="photo-slot" onclick="triggerUpload(this)">
+            <img src="" alt="Memory 5" />
+            <span class="slot-icon">🌺</span>
+            <span class="slot-lbl">Add Photo</span>
+            <span class="slot-caption">Her Strength</span>
+          </div>
+
+        </div>
+        <p class="gallery-note">&#x1F4F7; Click any frame to add a photo &mdash; they stay just for this session</p>
+      </div>
+    </section>
+
+    <!-- ══ HEARTFELT MESSAGE ══ -->
+    <section class="message-section reveal" id="message">
+      <div class="ornament">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+      <span class="quote-mark">&ldquo;</span>
+
+      <div class="glass-card">
+        <p class="message-text">
+          You raised <strong>two sons</strong> on your own, and never once let us
+          feel the weight you carried. Every meal you cooked, every sacrifice
+          you made, every sleepless night you spent — you gave it all
+          <strong>without asking for anything in return.</strong>
+          <br /><br />
+          You are not just a mother, Amma. You are our
+          <strong>strength, our home, and our greatest hero.</strong>
+          Watching you face life with grace, with courage, and with an
+          unbreakable smile has been the most powerful lesson of my life.
+          <br /><br />
+          This page is my small way of saying what words alone
+          can never fully capture &mdash;
+          <strong>
+            Thank you, Annapurna. I am so incredibly proud
+            and blessed to be your son, Naveen.
+          </strong>
+        </p>
+      </div>
+
+      <div class="ornament" style="margin-top:2rem;">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+    </section>
+
+    <!-- ══ SUPERPOWERS ══ -->
+    <section class="section reveal" id="qualities">
+      <p class="section-label">What She Means To Us</p>
+      <h2 class="section-title">Her <em>Superpowers</em></h2>
+      <div class="sep"></div>
+
+      <div class="qualities-grid">
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">💪</span>
+          <p class="quality-title">Unbreakable Strength</p>
+          <p class="quality-desc">She faced every storm alone and never once let it break her smile. Her resilience is our foundation.</p>
+        </div>
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">❤️</span>
+          <p class="quality-title">Endless Love</p>
+          <p class="quality-desc">Her heart has no limits — she gave us everything she had and more, every single day without fail.</p>
+        </div>
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">🌟</span>
+          <p class="quality-title">Our North Star</p>
+          <p class="quality-desc">In every confusing moment, in every dark road, she was always the light that showed us the way forward.</p>
+        </div>
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">🛡️</span>
+          <p class="quality-title">Our Protector</p>
+          <p class="quality-desc">She shielded us from pain we never even knew existed, carrying our burdens so we could carry our dreams.</p>
+        </div>
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">🌺</span>
+          <p class="quality-title">Graceful &amp; Kind</p>
+          <p class="quality-desc">Even under immense pressure, her grace never wavered. Her kindness toward others is truly rare beauty.</p>
+        </div>
+
+        <div class="quality-card reveal">
+          <span class="quality-icon">🏆</span>
+          <p class="quality-title">Our Greatest Teacher</p>
+          <p class="quality-desc">Everything good in us — every value, every virtue — she planted it with patience, love, and quiet wisdom.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ JOURNEY TIMELINE ══ -->
+    <section class="section reveal" id="journey">
+      <p class="section-label">The Story of a Queen</p>
+      <h2 class="section-title">Her <em>Journey</em></h2>
+      <div class="sep"></div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">The Beginning</p>
+            <p class="timeline-title">A Woman of Courage</p>
+            <p class="timeline-desc">She chose to face the world on her own terms — with dignity, with grace, and with an unwavering spirit that inspired everyone around her.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">The Journey</p>
+            <p class="timeline-title">Raising Two Sons Alone</p>
+            <p class="timeline-desc">As a single mother she carried the world on her shoulders — working tirelessly, sacrificing endlessly, yet always showing up with a warm smile and open arms.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">Every Day</p>
+            <p class="timeline-title">Sacrifice Without Complaint</p>
+            <p class="timeline-desc">She never once asked for credit. Every sacrifice was silent, every struggle was hidden — her only wish was to see her sons happy and whole.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">Today &amp; Always</p>
+            <p class="timeline-title">Our Forever Hero</p>
+            <p class="timeline-desc">Today her sons stand proud because of her. Everything we are, everything we will become — it all began with Annapurna Dwarapudi.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ DEDICATION ══ -->
+    <section class="dedication reveal" id="dedication">
+      <span class="dedication-icon">💙</span>
+      <h2>I Love You, Amma</h2>
+      <p class="dedication-sub">Forever &amp; always &mdash; your proud son, Naveen</p>
+      <div class="sep"></div>
+      <div class="glass-card" style="max-width:520px;margin:0 auto 2rem;">
+        <p class="message-text" style="font-size:1.1rem;line-height:1.9;">
+          You didn't just raise us, Amma —
+          <strong>you built us.</strong> Every version of us that is good,
+          that is kind, that is strong — it came from you.
+          <strong>Annapurna Dwarapudi</strong>, you are our queen, our universe,
+          and our greatest blessing. 🌸
+        </p>
+      </div>
+      <span class="signature">— Made with all my love, Naveen Dwarapudi 💛</span>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+      <p class="footer-name">For Annapurna Dwarapudi &mdash; Our Queen</p>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Naveen Dwarapudi. Made with
+        &hearts; for the woman who gave us everything.
+        All rights reserved.
+      </p>
+    </footer>
+
+  </div><!-- /.page -->
+
+  <!-- Hidden file inputs -->
+  <input type="file" id="heroFileInput" accept="image/*" style="display:none;" />
+  <input type="file" id="gridFileInput" accept="image/*" style="display:none;" />
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
