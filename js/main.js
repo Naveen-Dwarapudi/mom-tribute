@@ -5,13 +5,63 @@
 
 'use strict';
 
-/* ── 1. LOADING SCREEN ── */
+/* ── LOADER + CELEBRATION FLOW ── */
 window.addEventListener('load', () => {
   setTimeout(() => {
     const loader = document.getElementById('loader');
-    if (loader) loader.classList.add('hidden');
+    if (loader) {
+      loader.classList.add('hidden');
+    }
+    showCelebration();
   }, 2000);
 });
+
+/* ============================================================
+   CELEBRATION
+   ============================================================ */
+function showCelebration() {
+  const intro = document.getElementById('celebrationIntro');
+  if (!intro) return;
+  intro.classList.add('show');
+  createConfetti();
+  /* hide celebration after 4 sec */
+  setTimeout(() => {
+    intro.classList.add('hide');
+  }, 4000);
+}
+
+/* CONFETTI */
+function createConfetti() {
+  const container =
+    document.querySelector('.confetti-container');
+  if (!container) return;
+  const colors = [
+    '#87ceeb',
+    '#f0c040',
+    '#ffffff',
+    '#5dade2',
+    '#aed6f1'
+  ];
+  for (let i = 0; i < 160; i++) {
+    const confetti =
+      document.createElement('div');
+    confetti.classList.add('confetti');
+    confetti.style.left =
+      Math.random() * 100 + 'vw';
+    confetti.style.top = '-20px';
+    confetti.style.background =
+      colors[Math.floor(Math.random() * colors.length)];
+    confetti.style.width =
+      Math.random() * 10 + 5 + 'px';
+    confetti.style.height =
+      Math.random() * 10 + 5 + 'px';
+    confetti.style.animationDuration =
+      Math.random() * 3 + 3 + 's';
+    confetti.style.animationDelay =
+      Math.random() * 1.5 + 's';
+    container.appendChild(confetti);
+  }
+}
 
 /* ── 2. CUSTOM CURSOR ── */
 const cursor = document.querySelector('.cursor');
