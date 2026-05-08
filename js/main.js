@@ -258,8 +258,8 @@ const translations = {
     dedicationSub: 'Forever & always — your proud son, Naveen',
     dedicationMessage: 'You didn\'t just raise us, Amma — <strong>you built us.</strong> Every version of us that is good, that is kind, that is strong — it came from you. <strong>Annapurna Dwarapudi</strong>, you are our queen, our universe, and our greatest blessing. 🌸',
     signature: '— Made with all my love, Naveen Dwarapudi 💛',
-    footerName: 'For Annapurna Dwarapudi — Our Queen',
-    footerCopy: '&copy; <span id="year"></span> Naveen Dwarapudi. Made with &hearts; for the woman who gave us everything. All rights reserved.',
+    footerName: 'For Annapurna Dwarapudi 💙 — Our Queen',
+    footerCopy: '&copy; <span id="year"></span> Naveen Dwarapudi. Made with 💙 for the woman who gave us everything. All rights reserved.',
   },
   te: {
     pageTitle: 'అన్నపూర్ణ ద్వారపూడి కోసం 💙 — నా రాణి, నా ప్రపంచం',
@@ -346,7 +346,7 @@ const translations = {
 
     signature: '— నా హృదయం నిండా ప్రేమతో, నవీన్ ద్వారపూడి 💛',
 
-    footerName: 'అన్నపూర్ణ ద్వారపూడి కోసం — మా రాణి',
+    footerName: 'అన్నపూర్ణ ద్వారపూడి కోసం 💙 — మా రాణి',
 
     footerCopy:
       '&copy; <span id=\"year\"></span> నవీన్ ద్వారపూడి. మాకు తన జీవితాన్నంతా అర్పించిన అమ్మ కోసం ప్రేమతో రూపొందించబడింది. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.',
