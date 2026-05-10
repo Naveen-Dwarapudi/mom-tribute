@@ -274,7 +274,7 @@ const translations = {
     slotCaption3: 'Her Joy',
     slotCaption4: 'Our Family',
     slotCaption5: 'Her Strength',
-    galleryNote: '📷 Click any frame to add a photo — they stay just for this session',
+    galleryNote: '📷 Click to view memories',
     messageText: 'You raised <strong>two sons</strong> on your own, and never once let us feel the weight you carried. Every meal you cooked, every sacrifice you made, every sleepless night you spent — you gave it all <strong>without asking for anything in return.</strong><br /><br />You are not just a mother, Amma. You are our <strong>strength, our home, and our greatest hero.</strong> Watching you face life with grace, with courage, and with an unbreakable smile has been the most powerful lesson of my life.<br /><br />This page is my small way of saying what words alone can never fully capture &mdash; <strong>Thank you, Annapurna. I am so incredibly proud and blessed to be your son, Naveen.</strong>',
     sectionLabelQualities: 'What She Means To Us',
     sectionTitleQualities: 'Her <em>Superpowers</em>',
@@ -333,7 +333,7 @@ const translations = {
     slotCaption5: 'ఆమె ధైర్యం',
 
     galleryNote:
-      '📷 ఏ ఫ్రేమ్‌పైనా క్లిక్ చేసి ఫోటో జోడించండి — ఇవి ఈ సెషన్‌లో మాత్రమే సేవ్ అవుతాయి',
+      '📷 జ్ఞాపకాలను వీక్షించడానికి క్లిక్ చేయండి',
 
     messageText:
       'నువ్వు <strong>ఇద్దరు కొడుకులను</strong> ఒంటరిగా పెంచావు అమ్మ… కానీ నీ భుజాలపై ఎంత భారముందో మాకు ఎప్పుడూ తెలియనివ్వలేదు. నువ్వు వండిన ప్రతి భోజనం, చేసిన ప్రతి త్యాగం, నిద్రలేక గడిపిన ప్రతి రాత్రి — ఇవన్నీ <strong>ఏమీ ఆశించకుండా</strong> మాకోసమే ఇచ్చావు.<br /><br />నువ్వు కేవలం ఒక తల్లి మాత్రమే కాదు అమ్మ… నువ్వే మా <strong>బలం, మా ఇల్లు, మా జీవితంలో గొప్ప హీరో.</strong> జీవితాన్ని నువ్వు ఎదుర్కొన్న తీరు — ఆ ధైర్యం, ఆ ఓర్పు, ఆ చిరునవ్వు — ఇవే నా జీవితంలో నేర్చుకున్న అత్యంత గొప్ప పాఠాలు.<br /><br />ఈ పేజీ, మాటల్లో పూర్తిగా చెప్పలేని నా ప్రేమకు ఒక చిన్న గుర్తు మాత్రమే… <strong>ధన్యవాదాలు అమ్మ. నేను నీ కొడుకుగా పుట్టినందుకు ఎంతో గర్వంగా, అదృష్టంగా భావిస్తున్నాను.</strong>',
